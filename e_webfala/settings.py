@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'api',
     'Courses',
     'payments',
+    'home',
     'tailwind',
     'style',
     'django_browser_reload',
