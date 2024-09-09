@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'api',
     'Courses',
     'payments',
+    'Accounts',
     'home',
     'tailwind',
     'style',
