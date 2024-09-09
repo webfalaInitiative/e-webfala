@@ -139,3 +139,7 @@ TAILWIND_APP_NAME = 'style'
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
+
+
+PAYSTACK_SECRET_KEY = 'your_secret_key_here'
+PAYSTACK_PUBLIC_KEY = 'your_public_key_here'
