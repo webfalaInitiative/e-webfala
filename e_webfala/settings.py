@@ -141,12 +141,9 @@ INTERNAL_IPS = [
     "127.0.0.1",
 ]
 
-<<<<<<< HEAD
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 AUTH_USER_MODEL = 'Accounts.CustomUser'
-=======
 PAYSTACK_SECRET_KEY = 'your_secret_key_here'
 PAYSTACK_PUBLIC_KEY = 'your_public_key_here'
->>>>>>> payments
