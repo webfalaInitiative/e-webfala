@@ -17,6 +17,7 @@ class Course(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     cover_video = models.FileField(upload_to="course_videos/", blank=True, null=True)
     cover_photo = models.ImageField(upload_to="course_covers/", blank=True, null=True)
+    is_published = models.BooleanField(default=False)
 
     def __str__(self):
         return self.title
