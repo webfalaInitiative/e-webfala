@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'api',
     'Courses',
     'payments',
+    'Accounts',
     'home',
     'tailwind',
     'style',
@@ -135,3 +136,6 @@ TAILWIND_APP_NAME = 'style'
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
+
+AUTH_USER_MODEL = 'Accounts.CustomUser'
+
