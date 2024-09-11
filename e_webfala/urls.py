@@ -23,7 +23,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
     path('payments/', include('payments.urls')),
+
     path('courses/', include('Courses.urls')),
+
+    path("__reload__/", include("django_browser_reload.urls")),
+    path("accounts/", include("Accounts.urls")),
 ]
 
 # Add this section to serve media files during development
