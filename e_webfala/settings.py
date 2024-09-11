@@ -43,7 +43,9 @@ INSTALLED_APPS = [
     'payments',
     'Accounts',
     'home',
+    'tailwind',
     'style',
+    'django_browser_reload',
 ]
 
 MIDDLEWARE = [
