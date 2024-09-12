@@ -188,9 +188,17 @@ INTERNAL_IPS = [
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+REST_AUTH_SERIALIZERS = {
+    'LOGIN_SERIALIZER': 'Accounts.serializers.LoginSerializer'
+    }
+
 AUTH_USER_MODEL = 'Accounts.CustomUser'
-PAYSTACK_SECRET_KEY = 'your_secret_key_here'
-PAYSTACK_PUBLIC_KEY = 'your_public_key_here'
+ACCOUNT_USER_MODEL_USERNAME_FIELD = None
+ACCOUNT_USERNAME_REQUIRED = False
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_UNIQUE_EMAIL = True
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 # Redirect URL after login
 LOGIN_REDIRECT_URL = '/'
