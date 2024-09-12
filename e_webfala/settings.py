@@ -33,28 +33,31 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    "django.contrib.sites",
-    "django.contrib.admin",
-    "django.contrib.auth",
-    "django.contrib.contenttypes",
-    "django.contrib.sessions",
-    "django.contrib.messages",
-    "django.contrib.staticfiles",
-    "api",
-    "Courses",
-    "payments",
-    "Accounts",
-    "home",
-    "style",
-    "drf_yasg",
-    "rest_framework",
-    "rest_framework_simplejwt",
-    "dj_rest_auth",
-    "allauth",
-    "allauth.account",
-    "allauth.socialaccount",
-    "dj_rest_auth.registration",
-    "rest_framework.authtoken",
+    'django.contrib.sites',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'api',
+    'Courses',
+    'payments',
+    'Accounts',
+    'home',
+    'tailwind',
+    'style',
+    'django_browser_reload',
+    'drf_yasg',
+    'rest_framework',
+    'rest_framework_simplejwt',
+    'dj_rest_auth',  
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'dj_rest_auth.registration',
+    'rest_framework.authtoken' ,
+
 ]
 
 MIDDLEWARE = [
@@ -168,7 +171,6 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
@@ -179,10 +181,6 @@ TAILWIND_APP_NAME = "style"
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
-
-
-PAYSTACK_SECRET_KEY = 'your_secret_key_here'
-PAYSTACK_PUBLIC_KEY = 'your_public_key_here'
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
@@ -202,4 +200,3 @@ LOGIN_REDIRECT_URL = "/"
 
 # Redirect URL after signup
 ACCOUNT_SIGNUP_REDIRECT_URL = "/"
-
