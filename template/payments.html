@@ -48,11 +48,11 @@
     <div>
       <div class="flex">
         <p>Original Price:</p>
-        <p>#{{ course.original_price }}</p>
+        <p>₦{{ course.price }}</p>
       </div>
       <div class="flex">
         <p>Discount:</p>
-        <p>#{{ course.discount }}</p>
+        <p>₦{{ course.discount|default:"0.00"}}</p>
       </div>
     </div>
     <div class="flex">
