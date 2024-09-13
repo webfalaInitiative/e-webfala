@@ -33,28 +33,31 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    "django.contrib.sites",
-    "django.contrib.admin",
-    "django.contrib.auth",
-    "django.contrib.contenttypes",
-    "django.contrib.sessions",
-    "django.contrib.messages",
-    "django.contrib.staticfiles",
-    "api",
-    "Courses",
-    "payments",
-    "Accounts",
-    "home",
-    "style",
-    "drf_yasg",
-    "rest_framework",
-    "rest_framework_simplejwt",
-    "dj_rest_auth",
-    "allauth",
-    "allauth.account",
-    "allauth.socialaccount",
-    "dj_rest_auth.registration",
-    "rest_framework.authtoken",
+    'django.contrib.sites',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'api',
+    'Courses',
+    'payments',
+    'Accounts',
+    'home',
+    'tailwind',
+    'style',
+    'django_browser_reload',
+    'drf_yasg',
+    'rest_framework',
+    'rest_framework_simplejwt',
+    'dj_rest_auth',  
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'dj_rest_auth.registration',
+    'rest_framework.authtoken' ,
+
 ]
 
 MIDDLEWARE = [
@@ -162,7 +165,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = 'static/'
+STATICFILES_DIRS = [
+    BASE_DIR / "static"
+]
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
